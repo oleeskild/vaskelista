@@ -64,7 +64,7 @@
         document.querySelector("#yearForm").addEventListener("submit", function (e) {
             e.preventDefault();
             const year = document.querySelector("#year").value;
-            const letter = document.querySelector("#startLetter").value || "I";
+            const letter = document.querySelector("#startLetter").value || "F";
             createWashingList(year, letter);
         });
     </script>
@@ -123,7 +123,7 @@
                 }
             }
         }
-        createWashingList(document.querySelector("#year").value || new Date().getFullYear());
+        createWashingList(document.querySelector("#year").value || new Date().getFullYear(), "F");
     </script>
 </body>
 
